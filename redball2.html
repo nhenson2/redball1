@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Sets the programming language to javascript and links to
+        an external javascript source file-->
+        
+        <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
+        <script type="text/javascript">
+        
+            function sayhello() {
+               alert('hi there');
+            }
+            function moveright() {
+                redball.left = redball.left + 10;
+            }
+            function moveleft() {
+                redball.left = redball.left - 10;
+            }
+            function moveup() {
+                redball.top = redball.top - 10;
+            }
+            function movedown() {
+                redball.top = redball.top + 10;
+            }
+            function makeasquare() {
+                
+                //This slides the ball to the right
+                
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                
+                //This slides the ball down
+                
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                movedown();
+                
+                //This slides the ball to the left
+                
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                
+                //This slides the ball up
+                
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+                moveup();
+
+            }
+                function moveupright() {
+                    
+                    moveup(); moveright();
+                }
+                
+                function movedownright() {
+                    
+                    movedown(); moveright();
+                }
+                
+                function moveupleft() {
+                    
+                    moveup(); moveleft();
+                    
+                }
+                
+                function movedownleft() {
+                    
+                    movedown(); moveleft();
+                }
+                
+                function makeatriangle() {
+                    
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    
+                    
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    
+                }
+                
+                function makeanoctagon() {
+                    
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    moveright();
+                    
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    movedownright();
+                    
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    movedown();
+                    
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    movedownleft();
+                    
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    moveleft();
+                    
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    moveupleft();
+                    
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    moveup();
+                    
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    moveupright();
+                    
+                }
+                
+        </script>
+    </head>
+   <body>
+       
+       <!--Sets the image id to "redball" for later reference-->
+       <img id = "redball" src="http://lrn.icstars.org/redball.jpg"></img>
+       
+       <button onclick="sayhello()">Hello worlds </button>
+        <button onclick = "moveright()"> move right </button>
+         <button onclick = "moveleft()"> move left </button>
+          <button onclick = "moveup()"> move up </button>
+           <button onclick = "movedown()"> move down </button>
+            <button onclick = "makeasquare()"> make a square </button>
+            <button onclick = "moveupright()"> move up right </button>
+            <button onclick = "movedownright()"> move down right </button>
+            <button onclick = "moveupleft()"> move up left </button>
+            <button onclick = "movedownleft()"> move down left </button>
+            <button onclick = "makeatriangle()"> make a triangle </button>
+            <button onclick = "makeanoctagon()"> make an octagon</button>
+        
+   </body>
+</html>
